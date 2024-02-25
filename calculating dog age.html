@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dog Age Calculator</title>
+        <script type="text/javascript">
+            function years(form) {
+                form.dogage.value=form.myage.value*7
+            }
+        </script>
+    </head>
+
+    <body>
+        <b>Find out your age in Dog Age</b><br><br>
+        <form method="post">
+            <table border="0">
+                <tr>
+                    <td>Enter your Age</td>
+                    <td><input type="text" name="myage" size="10"></td>
+                </tr>
+                <tr>
+                    <td>Your Age in Dog years </td>
+                    <td><input type="text" name="dogage" size="10"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Calculate" onclick="years(this.form)"></td>
+                    <td><input type="reset" value="Reset"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

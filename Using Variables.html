@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using Variables</title>
+    </head>
+
+    <body>
+        <p id="variable"></p>
+        <p id="variable1"></p>
+        <p id="variable2"></p>
+        <script type="text/javascript">
+            x=10;
+            y=20;
+            z=x+y;
+            a="Gowtham"
+            b="Kumar"
+            c=a+b;
+            document.getElementById("variable").innerHTML=z;
+            document.getElementById("variable1").innerHTML=c;
+
+            person= {name:"Gowtham",age:"19 years old"}; //This is called Object Data type
+            document.getElementById("variable2").innerHTML= person.name +" is "+ person.age; 
+        </script>
+    </body>
+</html>
