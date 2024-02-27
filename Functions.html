@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions</title>
+        <script type="text/javascript">
+          function sayhello() {
+            document.write("Hello There !!")
+          }
+          function demo(name, age) {
+            if (name== "" || age== "") {
+              return window.alert("Please Enter Name and Age");
+            }
+            document.write(name+" is "+age+ " years old.")
+          }
+        </script>
+    </head>
+    
+    <body>
+        <p id="multiply"></p>
+        <script type="text/javascript">
+          function multiply(a,b) {
+            return a*b ;
+          }
+          document.getElementById("multiply").innerHTML= multiply(3,4);
+        </script>
+
+        <form>
+          <button onclick="sayhello()">Click !</button><br><br>
+        </form>
+
+        <form>
+           <input type="text" name="t1" placeholder="Enter Name"> <br><br>
+           <input type="text" name="t2" placeholder="Enter Age"><br><br><br>
+           <button onclick="demo(t1.value,t2.value)">Click !</button>
+        </form>
+    </body>
+</html>

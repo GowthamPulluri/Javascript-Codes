@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using Arrays</title>
+    </head>
+
+    <body>
+        <p id="array"></p>
+        <p id="array2"></p>
+        <p id="array3"></p>
+        <p id="combined array"></p>
+        <script type="text/javascript">
+            fruits=["Apple","Orange","Mango","Cherry","Grape"];
+            flowers=["Rose","Lily","Lotus","Jasmine","Sunflower"];
+           // fruits.pop() // it deletes the last element
+            fruits.shift() // it deletes the first element
+            fruits.push("Bannana") // it adds the element
+            fruits.unshift("Cheery") // it puts the given element in first place
+            fruits[1]="Kiwi" // it changes the certain element of given index number with given elements
+            delete fruits[2] // it deletes the certain element of given index number
+            fruits.splice(3,0,"Strawberry") // it adds the element before the given index number (3 is the index number and 0 says that we dont want to remove other elements)
+            flowers.sort() // it arrange the elements in alphabetical order
+            //flowers.reverse() // it arrange the elements in reverse alphabetical order
+            document.getElementById("array").innerHTML=fruits  // It prints the full arrays with "," separator
+            document.getElementById("array2").innerHTML=fruits.join("*") //It prints the full arrays with "*" separator 
+            document.getElementById("array3").innerHTML=flowers // It prints the full arrays with "," separator
+            combine_array=fruits.concat(flowers) // This Combines two arrays
+            document.getElementById("array3").innerHTML=combine_array 
+
+        </script>
+    </body>
+</html>

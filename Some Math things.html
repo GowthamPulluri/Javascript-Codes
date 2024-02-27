@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Numbers</title>
+    </head>
+
+    <body>
+        <p id="number"></p>
+        <p id="min"></p>
+        <p id="max"></p>
+        <p id="round"></p>
+        <script type="text/javascript">
+            document.getElementById("number").innerHTML= Math.random(); // The random is always between 0 and 1 only.
+            document.getElementById("min").innerHTML= Math.min(2,3,49,2314,-1,66,9,-2341); // It finds the minimum number
+            document.getElementById("max").innerHTML= Math.max(2,3,49,2314,-1,66,9,-2341); // It finds the maximum number
+            document.getElementById("round").innerHTML= Math.round(45.72);
+        </script>
+    </body>
+</html>
