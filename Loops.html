@@ -6,11 +6,46 @@
     
     <body>
         <script type="text/javascript">
+          /*  // Below is FOR loop
             var count;
             for (count=0 ;count<=10 ;count++) {
                 document.write(count)
                 document.write("<br>")
             }
+            // Below is if else loop
+            var num=prompt("Enter a Number :");
+            var count=0;
+            var alpha= ["q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m"];
+            while(num > 0)
+            {  
+                if (alpha.includes(String.fromCharCode(97 + lastDigit))) 
+                {
+                    window.alert("INVALID NUMBER");
+                }
+                else 
+                {
+                    num=Math.trunc(num/10);
+                    count++;
+                }
+                
+            }
+            document.write("Digits :" +count); */
+            // Below is Do-while loop
+            var actualpin= prompt("Add your PIN");
+            var pin;
+            var count=0;
+            do {
+                pin=prompt("Enter the pin :");
+                count++;
+            } while (pin!= actualpin && count < 3);
+            if (pin == actualpin)
+            {
+                document.write("PIN is correct. You are welcome.")
+            }        
+            else
+            {
+                document.write("PIN is incorrect. Account Locked.")
+            }    
         </script>
     </body>
 </html>

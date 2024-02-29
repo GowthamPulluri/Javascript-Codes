@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Events</title>
+        <script type="text/javascript">
+            function mouseover() {
+                document.images["img"].src="OIP_1.jpg"
+            }
+            function mouseout() {
+                document.images["img"].src="GK logo.jpg"
+            }
+            function Load() {
+                document.images["img"].src="GK logo.jpg"
+            }
+        </script>
+    </head>
+    
+    <body onload="Load()">
+        
+        <img name="img" onmouseover="mouseover()" onmouseout="mouseout()" width="500px" height="500px">
+        
+    </body>
+</html>
